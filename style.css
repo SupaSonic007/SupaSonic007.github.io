@@ -14,7 +14,7 @@ html {
 }
 
 .banner {
-  display: relative;
+  display: block;
 }
 
 .banner img {
