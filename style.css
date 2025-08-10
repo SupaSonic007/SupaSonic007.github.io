@@ -8,18 +8,25 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: x-large;
+  font-size: xx-large;
   font-weight: bold;
   font-family: monospace;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
 .banner {
+  position: relative;
+  text-align: center;
+  color: black;
   display: block;
   height: 33vh;
+  width: 100%;
 }
 
 .banner img {
+  position:relative;
   width: 100%;
-  height: 33vh;
-  object-fit: contain;
+  height:100%;
+  object-fit: cover;
 }
