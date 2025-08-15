@@ -1,6 +1,7 @@
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -12,7 +13,7 @@ html, body {
   font-weight: bold;
   font-family: monospace;
   text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
-               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
 .banner {
@@ -25,9 +26,9 @@ html, body {
 }
 
 .banner img {
-  position:relative;
+  position: relative;
   width: 100%;
-  height:100%;
+  height: 100%;
   object-fit: cover;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
@@ -42,14 +43,63 @@ html, body {
   align-content: stretch;
   justify-content: space-around;
 }
+
 .navbar a {
   text-decoration: none;
   flex-grow: 1;
   padding: 15px;
   text-align: center;
-  color:white;
+  color: white;
 }
 
 .navbar a:hover {
-  background-color: black;
+  background-color: #000000;
+}
+
+main {
+  padding: 30px;
+}
+
+.card {
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 5px;
+  min-height: 400px;
+  width: 300px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+}
+
+.proj-list {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 25px;
+  justify-content: center;
+  padding: 30px;
+  flex-wrap: wrap;
+
+}
+
+.card .hero {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+}
+
+.card .title {
+  display:block;
+  margin-top: 10px;
+  font-size: x-large;
+  font-weight: bold;
+  width: 100%;
+  color: #000000;
+}
+
+.card .description {
+  margin-top: 15px;
+  display:block;
+  width: 100%;
+  color: #000000;
 }
