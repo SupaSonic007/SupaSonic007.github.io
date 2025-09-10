@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-size: large;
 }
 
 .header {
@@ -13,7 +14,7 @@ body {
   font-weight: bold;
   font-family: monospace;
   text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
-    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
 .banner {
@@ -78,7 +79,7 @@ main {
   justify-content: center;
   padding: 30px;
   flex-wrap: wrap;
-
+  
 }
 
 .card .hero {
@@ -89,7 +90,7 @@ main {
 }
 
 .card .title {
-  display:block;
+  display: block;
   margin-top: 10px;
   font-size: x-large;
   font-weight: bold;
@@ -99,7 +100,40 @@ main {
 
 .card .description {
   margin-top: 15px;
-  display:block;
+  display: block;
   width: 100%;
   color: #000000;
 }
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+  
+    html,
+    body {
+      font-size: initial;
+    }
+  
+    .card {
+      width: 100%;
+      width: -moz-available;          /* WebKit-based browsers will ignore this. */
+      width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+      width: stretch;
+      margin-bottom: 15px;
+    }
+
+    .card .hero {
+      width: 100%;
+    }
+    
+    .proj-list a {
+      width: 100%;
+    }
+
+    .proj-list {
+      padding: 10px;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* @media only screen and (max-width: 768px) {...} */
+  
