@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: large;
+  font-family: monospace;
 }
 
 .header {
@@ -71,7 +72,7 @@ main {
   padding: 15px;
 }
 
-.proj-list {
+#proj-list {
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -105,15 +106,15 @@ main {
   color: #000000;
 }
 
-.proj {
+.proj img {
   content:url("./media/github.png")
 }
 
-.script {
+.script img {
   content:url("./media/github.png")
 }
 
-.tool {
+.tool img {
   content:url("./media/github.png")
 }
 
@@ -137,11 +138,11 @@ main {
       width: 100%;
     }
     
-    .proj-list a {
+    #proj-list a {
       width: 100%;
     }
 
-    .proj-list {
+    #proj-list {
       padding: 10px;
     }
   }
