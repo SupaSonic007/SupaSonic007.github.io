@@ -107,15 +107,21 @@ main {
 }
 
 .proj img {
-  content:url("./media/github.png")
+  content:url("./media/Icons8/icons8-program-100.png")
 }
 
 .script img {
-  content:url("./media/github.png")
+  content:url("./media/Icons8/icons8-file-100.png")
 }
 
 .tool img {
-  content:url("./media/github.png")
+  content:url("./media/Icons8/icons8-tools-100.png")
+}
+
+footer {
+  background-color: black;
+  padding: 30px;
+  color: white;
 }
 
   /* Extra small devices (phones, 600px and down) */
