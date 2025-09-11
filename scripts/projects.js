@@ -63,6 +63,7 @@ function loadProjects() {
 
         let hero = document.createElement("img");
         hero.classList.add("hero");
+        hero.alt = `${project.tag} image`
 
         let title = document.createElement("span");
         title.classList.add("title");
